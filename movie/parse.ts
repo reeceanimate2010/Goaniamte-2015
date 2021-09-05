@@ -1,6 +1,6 @@
 var themeFolder = process.env.THEME_FOLDER;
 var mp3Duration = require("mp3-duration");
-var char = require("../character/main.js");
+var char = require("../character/main.ts");
 var ttsInfo = require("../tts/info");
 var source = process.env.CLIENT_URL;
 var header = process.env.XML_HEADER;
