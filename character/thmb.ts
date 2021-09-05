@@ -1,4 +1,4 @@
-const char = require("./main");
+const char = require("./main.ts");
 const http = require("http");
 
 /**
