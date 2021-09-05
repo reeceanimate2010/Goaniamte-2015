@@ -116,7 +116,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="icon-bar"></span>
                   </button>
                   <a class="navbar-brand" href="https://ga.vyond.com/yourvideos" title="Vyond">
-                      <img alt="Vyond" src="https://d3v4eglovri8yt.cloudfront.net/static/b51fc9816191318d/go/img/vyond/vyond_logo_legacy.png">
+                      <img alt="Vyond" src="/html/logo.png">
                   </a>
             </div>
 
