@@ -35,16 +35,12 @@
 			},
 			"content": ""
 		},
-		"yourvideos([^?]+html).*": {
-			"contentReplace": true,
-			"regexLink": "yourvideos$1",
+		"yourvideos(.*)": {
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
 			}
 		},
-		"videomaker([^?]+html).*": {
-			"contentReplace": true,
-			"regexLink": "videomaker$1",
+		"videomaker(.*)": {
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
 			}
@@ -58,18 +54,6 @@
 		},
 		"/html/([^?]+).*": {
 			"regexLink": "/html/$1",
-			"headers": {
-				"Content-Type": "text/html; charset=UTF-8"
-			}
-		},
-		"videomaker([^?]+).*": {
-			"regexLink": "videomaker$1",
-			"headers": {
-				"Content-Type": "text/html; charset=UTF-8"
-			}
-		},
-		"yourvideos([^?]+).*": {
-			"regexLink": "yourvideos$1",
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
 			}
