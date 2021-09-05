@@ -187,9 +187,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- END OF HEADER -->
 
+<!-- goodbye vyond legacy banner
 <div class='free-trial-banner'>
     <span class='glyph-pro glyph-warning-sign'></span>
-    All good things must come to an end. This page will be retired by the end of September 2021. Please ensure you have copied all required videos to Vyond Studio before then. For more information please contact <a href="mailto:support@vyond.com">support@vyond.com</a><br />Your plan has expired. Don't delay, renew today! <a href="https://www.vyond.com/pricing">View Plans & Pricing.</a></div>
+    All good things must come to an end. This page will be retired by the end of September 2021. Please ensure you have copied all required videos to Vyond Studio before then. For more information please contact <a href="mailto:support@vyond.com">support@vyond.com</a><br />Your plan has expired. Don't delay, renew today! <a href="https://www.vyond.com/pricing">View Plans & Pricing.</a></div>-->
+<!-- goodbye vyond legacy banner (plan not expired)
+<div class='free-trial-banner'>
+    <span class='glyph-pro glyph-warning-sign'></span>
+    All good things must come to an end. This page will be retired by the end of September 2021. Please ensure you have copied all required videos to Vyond Studio before then. For more information please contact <a href="mailto:support@vyond.com">support@vyond.com</a></div>-->
+<div class='free-trial-banner'>
+    <span class='glyph-pro glyph-warning-sign'></span>
+    Vyond Rewrapped is not finched yet. that means that some old stuff might not work yet like the preview window, importer, and some more old stuff. <a class="text-uppercase" href="https://github.com/josephcrosmanplays532/Vyond-Rewrapped">GitHub Link</a></div>
 <script>
     (function(){
         // Log last upsell date.
