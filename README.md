@@ -9,6 +9,6 @@ If you are in this discord server called GoAnimate For Schools Remastered and lo
 - Old Vyond Voice Banner Ad Sidebar
 - Old Vyond Videomaker Studio & path <a href="/videomaker/full/">/videomaker/full/</a>
 - Old Vyond Lvp & path <a href="/videos/">/videos/</a>
-- Old Vyond Character Creator & path  #1 <a href="/charactercreator/">/charactercreator/</a> and finaly, <a href="/charactercreator/new_char/">/charactercreator/</a>
+- Old Vyond Character Creator & path  #1 <a href="/charactercreator/">/charactercreator/</a> and finaly, <a href="/charactercreator/new_char/">/charactercreator/new_char/</a>
 - That should be all. stay tuned for some upcoming changes!
 
