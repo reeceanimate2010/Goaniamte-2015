@@ -2,14 +2,14 @@
 	"GET": {
 		"/index.html": {
 			"headers": {
-				"Location": "/html/list.html"
+				"Location": "/yourvideos"
 			},
 			"statusCode": 302,
 			"content": ""
 		},
 		"/$": {
 			"headers": {
-				"Location": "/html/list.html"
+				"Location": "/yourvideos"
 			},
 			"statusCode": 302,
 			"content": ""
@@ -35,15 +35,28 @@
 			},
 			"content": ""
 		},
-		"/html/([^?]+html).*": {
+		"/yourvideos([^?]+html).*": {
 			"contentReplace": true,
-			"regexLink": "/html/$1",
+			"regexLink": "/yourvideos$1",
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
 			}
 		},
-		"/html/([^?]+).*": {
-			"regexLink": "/html/$1",
+		"/videomaker([^?]+html).*": {
+			"contentReplace": true,
+			"regexLink": "/videomaker$1",
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
+		"/videomaker([^?]+).*": {
+			"regexLink": "/videomaker$1",
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
+		"/yourvideos([^?]+).*": {
+			"regexLink": "/yourvideos$1",
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
 			}
