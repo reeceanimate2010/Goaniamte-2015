@@ -1,8 +1,8 @@
 const exFolder = process.env.EXAMPLE_FOLDER;
-const caché = require("../asset/caché");
-const fUtil = require("../misc/file");
+const caché = require("../asset/caché.ts");
+const fUtil = require("../misc/file.ts");
 const nodezip = require("node-zip");
-const parse = require("./parse");
+const parse = require("./parse.ts");
 const fs = require("fs");
 
 module.exports = {
