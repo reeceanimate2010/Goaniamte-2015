@@ -1,9 +1,9 @@
-const loadPost = require("../misc/post_body");
+const loadPost = require("../misc/post_body.ts");
 const header = process.env.XML_HEADER;
-const fUtil = require("../misc/file");
+const fUtil = require("../misc/file.ts");
 const nodezip = require("node-zip");
 const base = Buffer.alloc(1, 0);
-const asset = require("./main");
+const asset = require("./main.ts");
 const http = require("http");
 
 async function listAssets(data, makeZip) {

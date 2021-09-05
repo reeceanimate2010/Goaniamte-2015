@@ -1,9 +1,9 @@
-const loadPost = require("../misc/post_body");
+const loadPost = require("../misc/post_body.ts");
 const mp3Duration = require("mp3-duration");
 const voices = require("./info").voices;
-const asset = require("../asset/main");
-const util = require("../misc/util");
-const tts = require("./main");
+const asset = require("../asset/main.ts");
+const util = require("../misc/util.ts");
+const tts = require("./main.ts");
 const http = require("http");
 
 /**

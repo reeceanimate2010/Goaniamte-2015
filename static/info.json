@@ -2,14 +2,14 @@
 	"GET": {
 		"/index.html": {
 			"headers": {
-				"Location": "/html/list.html"
+				"Location": "/yourvideos"
 			},
 			"statusCode": 302,
 			"content": ""
 		},
 		"/$": {
 			"headers": {
-				"Location": "/html/list.html"
+				"Location": "/yourvideos"
 			},
 			"statusCode": 302,
 			"content": ""
@@ -34,6 +34,16 @@
 				"Content-Type": "image/png"
 			},
 			"content": ""
+		},
+		"yourvideos(.*)": {
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
+		"videomaker(.*)": {
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
 		},
 		"/html/([^?]+html).*": {
 			"contentReplace": true,

@@ -1,4 +1,4 @@
-const movie = require("./main");
+const movie = require("./main.ts");
 const base = Buffer.alloc(1, 0);
 const http = require("http");
 

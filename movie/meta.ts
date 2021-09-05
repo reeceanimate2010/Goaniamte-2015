@@ -1,4 +1,4 @@
-const movie = require("./main");
+const movie = require("./main.ts");
 const http = require("http");
 
 /**
