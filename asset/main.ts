@@ -1,6 +1,6 @@
-const chars = require("../character/main");
-const fUtil = require("../misc/file");
-const caché = require("./caché");
+const chars = require("../character/main.ts");
+const fUtil = require("../misc/file.ts");
+const caché = require("./caché.ts");
 
 module.exports = {
 	load(mId, aId) {
