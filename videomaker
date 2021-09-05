@@ -222,12 +222,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="theme">
             <div class="theme__top">
                 <div class="visible-xs">
-                    <img class="img-responsive center-block" src="/html/img/Comedy_World.jpg">
+                    <img class="img-responsive center-block" src="https://josephcrosmanplays532.github.io/img/Comedy_World.jpg">
                 </div>
                 <div class="hidden-xs">
-                    <video class="theme__top__video" poster="/html/img/Comedy_World.jpg" loop="" preload="none">
+                    <video class="theme__top__video" poster="https://josephcrosmanplays532.github.io/img/Comedy_World.jpg" loop="" preload="none">
 
-                        <img class="img-responsive center-block" src="/html/img/Comedy_World.jpg">
+                        <img class="img-responsive center-block" src="https://josephcrosmanplays532.github.io/img/Comedy_World.jpg">
                     </video>
                 </div>
             </div>
@@ -254,12 +254,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="theme">
             <div class="theme__top">
                 <div class="visible-xs">
-                    <img class="img-responsive center-block" src="/html/img/Lil_Peepz.jpg">
+                    <img class="img-responsive center-block" src="https://josephcrosmanplays532.github.io/img/Lil_Peepz.jpg">
                 </div>
                 <div class="hidden-xs">
-                    <video class="theme__top__video" poster="/html/img/Lil_Peepz.jpg" loop="" preload="none">
+                    <video class="theme__top__video" poster="https://josephcrosmanplays532.github.io/img/Lil_Peepz.jpg" loop="" preload="none">
 
-                        <img class="img-responsive center-block" src="/html/img/Lil_Peepz.jpg">
+                        <img class="img-responsive center-block" src="https://josephcrosmanplays532.github.io/img/Lil_Peepz.jpg">
                     </video>
                 </div>
             </div>
@@ -287,10 +287,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="theme__label">Includes a retro videomaker!</div>
             <div class="theme__top">
                 <div class="visible-xs">
-                    <img class="img-responsive center-block" src="/html/img/Cartoon_Classics.jpg">
+                    <img class="img-responsive center-block" src="https://josephcrosmanplays532.github.io/img/Cartoon_Classics.jpg">
                 </div>
                 <div class="hidden-xs">
-                    <video class="theme__top__video" poster="/html/img/Cartoon_Classics.jpg" loop="" preload="none">
+                    <video class="theme__top__video" poster="https://josephcrosmanplays532.github.io/img/Cartoon_Classics.jpg" loop="" preload="none">
 
                         <img class="img-responsive center-block" src="/html/img/Cartoon_Classics.jpg">
                     </video>
@@ -393,7 +393,7 @@ $(function() {
 });
 </script>
 
-<script src="/html/js/video_maker.js.gz.js "></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/video_maker.js.gz.js "></script>
 
 
 
