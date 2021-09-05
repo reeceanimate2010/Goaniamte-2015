@@ -1,5 +1,5 @@
-const loadPost = require("../misc/post_body");
-const starter = require("./main");
+const loadPost = require("../misc/post_body.ts");
+const starter = require("../main.ts");
 const http = require("http");
 
 /**
