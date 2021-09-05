@@ -1,6 +1,6 @@
-const loadPost = require("../misc/post_body");
+const loadPost = require("../misc/post_body.ts");
 const formidable = require("formidable");
-const asset = require("./main");
+const asset = require("./main.ts");
 const http = require("http");
 const fs = require("fs");
 
