@@ -251,26 +251,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="grid-viewport video-listing" id="videos">
         <table class="table table-hover table-generic">
-            <tfoot>
-                <tr>
-                    <td colspan="4">
-                        <div id="novideos" class="emptystate" style="display:block">
-                            <img class="emptystate-image" src="https://d3v4eglovri8yt.cloudfront.net/static/b51fc9816191318d/go/img/myvideos/chair_empty.png">
-                            <p>No videos</p>
-                        </div>
-                        <div id="videos" style="display:none">
-                        		<thead>
-        <td></td>                  
+            <thead>
+			<tr>
+				<td></td>
 				<td>Video Title</td>
 				<td>Last Modified</td>
 				<td></td>
+			</tr>
 		</thead>
 		<tbody></tbody>
 		<tfoot>
-				<a id="load_more" href="javascript:;">Load more of your videos...</a>
-                   </td>
-                </tr>
-            </tfoot>
+			<tr>
+				<td colspan="127"><a id="load_more" href="javascript:;">LOAD MORE...</a></td>
+			</tr>
+		</tfoot>
         </table>
     </div>
 
@@ -508,15 +502,6 @@ var folderCounts = 0;
     </script>
 
 <script type="text/javascript">
-function loadVideos() {
-			document.getElementById("videos").style.display = "block";
-			document.getElementById("novideos").style.display = "none";
-		}
-		
-		function doNotLoadAnyVideosAtAll() {
-			document.getElementById("novideos").style.display = "block";
-			document.getElementById("videos").style.display = "none";
-		}
 var json;
 		var tbody = document.getElementsByTagName('tbody')[0];
 		var loadMore = document.getElementById('load_more');
@@ -530,8 +515,6 @@ var json;
 			for (; c < C; c++) {
 				if (c > json.length - 1) {
 					loadMore.remove();
-          if (c > videos + 1) {
-					loadVideos()
 					break;
 				}
 
