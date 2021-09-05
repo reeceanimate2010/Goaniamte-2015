@@ -19,7 +19,8 @@
 <link href="https://josephcrosmanplays532.github.io/fonts/1/sailec.css" rel="stylesheet" type="text/css">
 <link href="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/css/common_combined.css.gz.css" rel="stylesheet" type="text/css">
 
-<link href="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/css/videomaker3.css.gz.css" rel="stylesheet" type="text/css">
+<link href="/html/css/videomaker3.css.gz.css" rel="stylesheet" type="text/css">
+<link href="/html/css/banner.css.gz.css" rel="stylesheet" type="text/css">
 <!--[if lt IE 9]>
 <style text="text/css">
 .top-nav.collapse {height: auto;overflow: visible;}
@@ -28,15 +29,15 @@
 
 
 <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-TXV7MD"></script><script type="text/javascript" async="" src="https://ga.vyond.com/ajax/cookie_policy"></script><script src="/html/js/common_combined.js.gz.js"></script>
-<script type="text/javascript" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/po/goserver_js-en_US.json.gz.json"></script>
+<script type="text/javascript" src="/html/json/goserver_js-en_US.json.gz.json"></script>
 <script type="text/javascript">
 var I18N_LANG = 'en_US';
 var GT = new Gettext({'locale_data': json_locale_data});
 </script>
 
-<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/jquery.flexslider.min.js.gz.js"></script>
-<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/trial_upsell.js.gz.js"></script>
-<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/sessionChecker.js.gz.js"></script>
+<script src="/html/js/jquery.flexslider.min.js.gz.js"></script>
+<script src="/html/js/trial_upsell.js.gz.js"></script>
+<script src="/html/js/sessionChecker.js.gz.js"></script>
 
 <!-- Vyond Cookie Consent -->
 <script>(function(v,y,o,n){v[n]=v[n]||[];
@@ -98,7 +99,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="icon-bar"></span>
                   </button>
                   <a class="navbar-brand" href="/yourvideos" title="">
-                      <img alt="Vyond" src="/html/logo.png">
+                      <img alt="Vyond" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/vyond/vyond_logo_legacy.png">
                   </a>
             </div>
 
@@ -168,6 +169,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- END OF HEADER -->
 
 <div class="theme-selection">
+<script src="/html/json/70x3iky0kr.jsonp" async=""></script>
+<script src="/html/js/E-v1.js" async=""></script>
+
 
 
 <div class="container">
@@ -222,12 +226,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="theme">
             <div class="theme__top">
                 <div class="visible-xs">
-                    <img class="img-responsive center-block" src="https://josephcrosmanplays532.github.io/img/Comedy_World.jpg">
+                    <img class="img-responsive center-block" src="/html/img/Comedy_World.jpg">
                 </div>
                 <div class="hidden-xs">
-                    <video class="theme__top__video" poster="https://josephcrosmanplays532.github.io/img/Comedy_World.jpg" loop="" preload="none">
+                    <video class="theme__top__video" poster="/html/img/Comedy_World.jpg" loop="" preload="none">
 
-                        <img class="img-responsive center-block" src="https://josephcrosmanplays532.github.io/img/Comedy_World.jpg">
+                        <img class="img-responsive center-block" src="/html/img/Comedy_World.jpg">
                     </video>
                 </div>
             </div>
@@ -254,12 +258,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="theme">
             <div class="theme__top">
                 <div class="visible-xs">
-                    <img class="img-responsive center-block" src="https://josephcrosmanplays532.github.io/img/Lil_Peepz.jpg">
+                    <img class="img-responsive center-block" src="/html/img/Lil_Peepz.jpg">
                 </div>
                 <div class="hidden-xs">
-                    <video class="theme__top__video" poster="https://josephcrosmanplays532.github.io/img/Lil_Peepz.jpg" loop="" preload="none">
+                    <video class="theme__top__video" poster="/html/img/Lil_Peepz.jpg" loop="" preload="none">
 
-                        <img class="img-responsive center-block" src="https://josephcrosmanplays532.github.io/img/Lil_Peepz.jpg">
+                        <img class="img-responsive center-block" src="/html/img/Lil_Peepz.jpg">
                     </video>
                 </div>
             </div>
@@ -287,10 +291,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="theme__label">Includes a retro videomaker!</div>
             <div class="theme__top">
                 <div class="visible-xs">
-                    <img class="img-responsive center-block" src="https://josephcrosmanplays532.github.io/img/Cartoon_Classics.jpg">
+                    <img class="img-responsive center-block" src="/html/img/Cartoon_Classics.jpg">
                 </div>
                 <div class="hidden-xs">
-                    <video class="theme__top__video" poster="https://josephcrosmanplays532.github.io/img/Cartoon_Classics.jpg" loop="" preload="none">
+                    <video class="theme__top__video" poster="/html/img/Cartoon_Classics.jpg" loop="" preload="none">
 
                         <img class="img-responsive center-block" src="/html/img/Cartoon_Classics.jpg">
                     </video>
@@ -393,7 +397,7 @@ $(function() {
 });
 </script>
 
-<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/video_maker.js.gz.js "></script>
+<script src="/html/js/video_maker.js.gz.js "></script>
 
 
 
