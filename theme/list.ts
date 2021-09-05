@@ -39,7 +39,7 @@
 */
 
 const http = require("http");
-const fUtil = require("../misc/file");
+const fUtil = require("../misc/file.ts");
 const folder = process.env.THEME_FOLDER;
 
 /**
