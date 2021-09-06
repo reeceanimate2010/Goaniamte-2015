@@ -11,30 +11,32 @@ const fs = require("fs");
  * @returns {boolean}
  */
 module.exports = function (req, res, url) {
-	if (req.method != 'POST' || url.pathname != '/ajax/saveUserProp') return;
-	formidable.IncomingForm().parse(req, (e, f, files) => {
-		var [mId, mode, ext] = fields.params.split(".");
+	if (req.method != "POST") return;
+	switch (url.pathname) {
+		case "/ajax/saveUserProp":
+			formidable().parse(req, (_, fields, files) => {
+				var [mId, mode, ext] = fields.params.split(".");
 				switch (mode) {
-					case "voiceover":
+					case "vo":
 						mode = "voiceover";
 						break;
-					case "soundeffect":
+					case "se":
 						mode = "soundeffect";
 						break;
 					case "bgmusic":
 						mode = "music";
 						break;
 				}
-		const path = files.import.path, buffer = fs.readFileSync(path);
 
-		const name = files.import.name;
-		const suffix = name.substr(name.lastIndexOf('.'));
-		asset.saveLocal(buffer, mId, suffix);
-		fs.unlinkSync(path);
-		res.end();
-	});
-	return true;
-	case "/goapi/saveSound/":
+				var path = files.import.path;
+				var buffer = fs.readFileSync(path);
+				asset.save(buffer, mId, mode, ext);
+				fs.unlinkSync(path);
+				delete buffer;
+				res.end();
+			});
+			return true;
+		case "/goapi/saveSound/":
 			loadPost(req, res).then(([data, mId]) => {
 				var bytes = Buffer.from(data.bytes, "base64");
 				asset.save(bytes, mId, "voiceover", "ogg");
@@ -46,4 +48,5 @@ module.exports = function (req, res, url) {
 				res.end("0" + asset.save(body, mId, "starter", "xml"));
 			});
 			return true;
-}
+	}
+};
