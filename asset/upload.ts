@@ -26,6 +26,9 @@ module.exports = function (req, res, url) {
 					case "bgmusic":
 						mode = "bgmusic";
 						break;
+					case "bg":
+						mode = "background";
+						break;
 				}
 
 				var path = files.import.path;
