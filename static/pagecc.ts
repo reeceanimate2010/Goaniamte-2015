@@ -65,7 +65,7 @@ module.exports = function (req, res, url) {
 			                siteId: "go",
 			                userId: "00EDZP3Cu0aw",
 			                themeId: "family",
-			                ut":30,
+			                ut: 30,
 				},
 				movie: process.env.SWF_URL + "/cc.swf", // 'http://localhost/cc.swf'
 			};
