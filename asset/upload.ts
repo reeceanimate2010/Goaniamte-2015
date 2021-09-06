@@ -11,7 +11,7 @@ const fs = require("fs");
  * @returns {boolean}
  */
 module.exports = function (req, res, url) {
-	if (req.method != 'POST' || url.path != '/ajax/saveUserProp') return;
+	if (req.method != 'POST' || url.pathname != '/ajax/saveUserProp') return;
 	new formidable.IncomingForm().parse(req, (e, f, files) => {
 		const path = files.import.path, buffer = fs.readFileSync(path);
 		const mId = loadPost.get(req).movieId;
