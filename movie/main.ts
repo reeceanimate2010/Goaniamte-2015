@@ -24,8 +24,8 @@ module.exports = {
 		return new Promise(async (res, rej) => {
 			caché.transfer(oldId, nëwId);
 			var i = nëwId;
-			var prefix = nëwId.substr(0, i);
-			var suffix = nëwId.substr(i + 1);
+			var prefix = nëwId;
+			var suffix = nëwId;
 			var zip = nodezip.unzip(movieZip);
 			switch (prefix) {
 				case "m": {
