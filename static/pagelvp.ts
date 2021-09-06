@@ -623,7 +623,7 @@ Copyright (C) Joseph Animate 2021, 2021.</p>
         </div>
     </div>
     <div class="intro-banner">
-        <div>Welcome to Joseph Animate Awesome Domain! Create Cartoons excatly the way you want!</div>
+        <div>Welcome to Vyond Rewrapped! Create Animations excatly the way you want!</div>
         <div><a data-wistia="qx668jjl2e" class="btn-sm btn-dark play-btn home-video-play"><span class="glyph-pro glyph-play-button"></span> Demo</a></div>
     </div>
     <!-- Video player container -->
