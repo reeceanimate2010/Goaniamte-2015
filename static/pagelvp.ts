@@ -35,39 +35,66 @@ module.exports = function (req, res, url) {
 	switch (url.pathname) {
 		case "/videos/": {
 			attrs = {
-				data: process.env.SWF_URL + "/cc.swf", // data: 'cc.swf',
+				data: process.env.SWF_URL + "/player.swf", // data: 'player.swf',
 				type: "application/x-shockwave-flash",
-				id: "char_creator",
-                                swf: process.env.SWF_URL + "/cc.swf",
-                                height: "600",
-                                width: "960",
-
-                                align: "middle",
-                                allowScriptAccess: "always",
-                                allowFullScreen: "true",
-                                wmode: "transparent",
-
-                                hasVersion: "10.3",
+				id: "Player",
+				width: "100%",
+				height: "100%",
+				bgcolor: "#000000",
+				scale: "exactfit",
+				allowScriptAccess: "always",
+				allowFullScreen: "true",
+				wmode: "opaque",
 			};
 			params = {
 				flashvars: {
+					movieOwner: "USER+RETIRED",
+					movieOwnerId: "0vPLkFi4Y7kw",
+					movieId: "",
+					movieLid: "0",
+					movieTitle: "Butler+Sues+His+Parents+%28Series+Finale%29",
+					movieDesc: "Credit+to+everyone.+This+is+my+final+Butler+Video.",
+					userId: "",
+					username: "",
+					uemail: "",
+					ut: "-1",
+					numContact: "",
 					apiserver: "/",
-			                m_mode: "school",
-			                bs: "adam",
-			                isLogin: "Y",
-			                isEmbed: "0",
-			                ctc: "go",
-			                tlang: "en_US",
-			                storePath: process.env.STORE_URL + "/<store>",
-			                clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
-			                appCode: "go",
-			                page: "",
-			                siteId: "go",
-			                userId: "00EDZP3Cu0aw",
-			                themeId: "family",
-			                ut: 30,
+					duration: "140",
+					playcount: 1,
+					thumbnailURL: "https://josephcrosmanplays532.github.io/GoAnimate-2016-Video-Player-Files/20077390.jpg",
+				        copyable: "0",
+					isPublished: "1",
+					ctc: "go",
+					tlang: "en_US",
+					is_private_shared: "0",
+					autostart: "0",
+					appCode: "go",
+					is_slideshow: "0",
+					originalId: "0zEt_fo4L-5k",
+					is_emessage: "0",
+					storePath: process.env.STORE_URL + "/<store>",
+					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
+					animationPath: process.env.SWF_URL + "/",
+					isEmbed: "0",
+					refuser: null,
+					utm_source: null,
+					uid: null,
+					isTemplate: "0",
+					showButtons: "1",
+					chain_mids: "",
+					averageRating: 5,
+					ratingCount: "19",
+					fb_app_url: "/",
+					ad: 1,
+					endStyle: 0,
+					isWide: "1",
+					pwm: 1,
+					s3base: "https://josephcrosmanplays532.github.io/s3base/,https://josephcrosmanplays532.github.io/assets/",
+					initcb: "flashPlayerLoaded",
+					showshare: false,
 				},
-				movie: process.env.SWF_URL + "/cc.swf", // 'http://localhost/cc.swf'
+				movie: process.env.SWF_URL + "/player.swf", // 'http://localhost/player.swf'
 			};
 			break;
 		}
@@ -132,8 +159,8 @@ Copyright (C) Joseph Animate 2021, 2021.">
 <link rel="alternate" href="https://josephcrosmanplays532.github.io/GoAnimate-2016-Video-Player-Files/GoAnimate/WhatsNew" type="application/rss+xml" title="GoAnimate - Recently Released Content">
 <link rel="alternate" href="https://josephcrosmanplays532.github.io/GoAnimate-2016-Video-Player-Files/GoAnimate/MostWatched" type="application/rss+xml" title="GoAnimate - Most Watched">
 
-<link href="//josephcrosmanplays532.github.io/GoAnimate-2016-Video-Player-Files/font.css" rel="stylesheet" type="text/css">
-<link href="https://josephcrosmanplays532.github.io/GoAnimate-2016-Video-Player-Files/common_combined.css" rel="stylesheet" type="text/css">
+<link href="//josephcrosmanplays532.github.io/fonts/1/sailec.css" rel="stylesheet" type="text/css">
+<link href="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/css/common_combined.css.gz.css" rel="stylesheet" type="text/css">
 
 <link href="https://josephcrosmanplays532.github.io/GoAnimate-2016-Video-Player-Files/upsell_modals.css" rel="stylesheet" type="text/css">
 <link href="https://josephcrosmanplays532.github.io/GoAnimate-2016-Video-Player-Files/watermark.css" rel="stylesheet" type="text/css">
@@ -384,8 +411,7 @@ if (self !== top) {
 
 
 <div class="site-header">
-    <div class="navbar site-nav" role="navigation">
-        <div class="container">
+    <div class="navbar site-nav site-nav--legacy" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -393,42 +419,67 @@ if (self !== top) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                <a class="navbar-brand" href="https://josephcrosmanplays532.github.io/" title="Joseph Animate Awseome Domain">
-                    <img alt="Make a Video Online with GoAnimate.com" src="https://josephcrosmanplays532.github.io/static/477/go/img/business_video/home/list_logo.png">
-                </a>
+                  <a class="navbar-brand" href="/yourvideos" title="">
+                      <img alt="Vyond" src="/html/logo.png">
+                  </a>
             </div>
 
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                
                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="https://josephcrosmanplays532.github.io/signup">Free Trial</a></li>
-                    <li><a href="https://josephcrosmanplays532.github.io/login">Login</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" href="https://josephcrosmanplays532.github.io/videos" data-toggle="dropdown">Explore <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="http://resources.vyond.com/">Resources</a></li>
-                            <li><a href="http://blog.vyond.com/">Blog</a></li>
-                            <li><a href="https://josephcrosmanplays532.github.io/videos">Featured Videos</a></li>
-                            <li><a href="https://josephcrosmanplays532.github.io/features">Features</a></li>
-                            <li><a href="https://support.vyond.com/">Help Center</a></li>
-                        </ul>
-                    </li>
-                                    <li class="plans-and-pricing">
-                        <a href="/player/embed/0z83keHPtu0o">Watch Embeded Video (2017 Version)</a>
-                    </li>
+<li class="dropdown">
+    <a class="dropdown-toggle" href="https://support.vyond.com/" data-toggle="dropdown">Help<span class="dropdown-caret"></span></a>
+    <ul class="dropdown-menu dropdown-menu-help">
+
+        <li>
+            <a href="file:///C:/Users/%C5%81ukasz/Desktop/Vyond%20Legacy%20Theme%20chooser.html#" onclick="zE.activate({hideOnClose: true});amplitudeTrackCtaHelp('quick_search');return false;">Quick Search</a>
+        </li>
+        <li>
+            <a href="https://support.vyond.com/" onclick="amplitudeTrackCtaHelp('help_center');" target="_blank">Help Center</a>
+        </li>
+        <li>
+            <a href="https://product.vyond.com/" onclick="amplitudeTrackCtaHelp('whats_new');" target="_blank">What’s New</a>
+        </li>
+    </ul>
+</li>
+
+<script>
+    $('.dropdown-menu-help').click(function(e) {
+        e.stopPropagation();
+    });
+</script>
                     <li>
-                        <a class="hidden-sm hidden-md hidden-lg" href="https://josephcrosmanplays532.github.io/videomaker">Make a Video</a>
-                        <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="https://josephcrosmanplays532.github.io/videomaker">Make a Video</a></span>
+                        <a class="hidden-sm hidden-md hidden-lg" href="https://vyondrewrapped.herokuapp.com/videomaker">Make a Video</a>
+                        <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="https://vyondrewrapped.herokuapp.com/videomaker">Make a Video</a></span>
                     </li>
+<li class="dropdown">
+    <a class="dropdown-toggle" href="/account" data-toggle="dropdown">
+        <span class="hidden-sm hidden-md hidden-lg">Your Account</span>
+        <div class="site-nav__profile-image">
+            <div class="badge-circle">U</div>
+        </div><span class="dropdown-caret"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-user">
+        <li class="dropdown-user-profile">
+            <div class="dropdown-user-profile__display-name">
+                You           </div>
+            
+        </li><li class="divider"></li>
+        <li><a href="https://ga.vyond.com/account">Account Settings</a></li>
+        
+        <li class="divider"></li>
+        <li><a class="logout-link gtm-logout" href="https://ga.vyond.com/logoff">Logout</a></li>
+    </ul>
+</li>
+
+<script>
+    $('.dropdown-menu-user').click(function(e) {
+        e.stopPropagation();
+    });
+</script>
                 </ul>
             </div>
-
-            <div class="noti_tooltips_container"></div>
-        </div>
     </div>
 </div>
-    <script>var notiTooltips = new NotificationTooltips($('#idxNotibtn'));</script>
-
 
 <script>
     jQuery('.logout-link').click(function(){
@@ -457,7 +508,7 @@ if (self !== top) {
                         We are optimizing this video to be compatible with your browser, please wait a few minutes then refresh this page. <a href="https://support.vyond.com/hc/en-us/articles/206949976" target="_blank">Learn more.</a>                    </div>
                     <div class="video-player-viewport using-flash" style="background-image: url('https://josephcrosmanplays532.github.io/GoAnimate-2016-Video-Player-Files/20077390L.jpg');">
                         <div class="video-player-wrapper embed-responsive embed-responsive-16by9">
-                            <div class="embed-responsive-item" id="flash-player"><object data="https://josephcrosmanplays532.github.io/animation/66453a3ba2cc5e1b/player.swf" type="application/x-shockwave-flash" id="Player" width="100%" height="100%"><param name="bgcolor" value="#000000"><param name="scale" value="exactfit"><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"><param name="wmode" value="opaque"><param name="flashvars" value="movieOwner=USER%2BRETIRED&amp;movieOwnerId=0vPLkFi4Y7kw&amp;movieId=m-0&amp;movieLid=0&amp;movieTitle=Butler%2BSues%2BHis%2BParents%2B%2528Series%2BFinale%2529&amp;movieDesc=Credit%2Bto%2Beveryone.%2BThis%2Bis%2Bmy%2Bfinal%2BButler%2BVideo.&amp;userId=&amp;username=&amp;uemail=&amp;ut=-1&amp;numContact=&amp;apiserver=https%3A%2F%2Fgoanimate-wrapper-europe.herokuapp.com%2F&amp;duration=140&amp;playcount=1&amp;thumbnailURL=https%3A%2F%2Fs3.amazonaws.com%2Ffs.goanimate.com%2Ffiles%2Fthumbnails%2Fmovie%2F1217%2F1588217%2F20774464L.jpg&amp;copyable=0&amp;isPublished=1&amp;ctc=go&amp;tlang=en_US&amp;is_private_shared=0&amp;autostart=0&amp;appCode=go&amp;is_slideshow=0&amp;originalId=0zEt_fo4L-5k&amp;is_emessage=0&amp;storePath=https%3A%2F%2Fjosephcrosmanplays532.github.io%2Fstore%2F3a981f5cb2739137%2F%3Cstore%3E&amp;clientThemePath=https%3A%2F%2Fjosephcrosmanplays532.github.io%2Fstatic%2F55910a7cd204c37c%2F%3Cclient_theme%3E&amp;animationPath=https%3A%2F%2Fjosephcrosmanplays532.github.io%2Fanimation%2F66453a3ba2cc5e1b%2F&amp;isEmbed=0&amp;&amp;&amp;&amp;isTemplate=0&amp;showButtons=1&amp;chain_mids=&amp;averageRating=5&amp;ratingCount=19&amp;fb_app_url=https%3A%2F%2Fgoanimate-wrapper-europe.herokuapp.com%2F&amp;ad=1&amp;endStyle=0&amp;isWide=1&amp;pwm=1&amp;s3base=https%3A%2F%2Fs3.amazonaws.com%2Ffs.goanimate.com%2F%2Chttps%3A%2F%2Fassets.vyond.com%2F&amp;initcb=flashPlayerLoaded&amp;showshare=false"><param name="movie" value="https://josephcrosmanplays532.github.io/animation/66453a3ba2cc5e1b/player.swf"></object></div>
+                            <div class="embed-responsive-item" id="flash-player">${toObjectString(attrs, params)}</div>
 
                             <video class="embed-responsive-item hidden" id="h5-player"></video>
                         </div>
@@ -874,8 +925,8 @@ Copyright (C) Joseph Animate 2021, 2021.</p>
 <input id="embed_code_field" type="hidden" value="<iframe scrolling=&quot;no&quot; allowTransparency=&quot;true&quot; allowfullscreen frameborder=&quot;0&quot; width=&quot;620&quot; height=&quot;350&quot; src=&quot;https://goanimate.com/player/embed/0-13F9yscDHc&quot; ></iframe>
 "/>
 <script>
-    var flashPlayerUrl = 'https://josephcrosmanplays532.github.io/animation/66453a3ba2cc5e1b/player.swf',
-        flashPlayerVars = {"movieOwner":"USER+RETIRED","movieOwnerId":"0vPLkFi4Y7kw","movieId":"m-0","movieLid":"0","movieTitle":"Butler+Sues+His+Parents+%28Series+Finale%29","movieDesc":"Credit+to+everyone.+This+is+my+final+Butler+Video.","userId":"","username":"","uemail":"","ut":"-1","numContact":"","apiserver":"https:\/\/goanimate-wrapper-europe.herokuapp.com\/","duration":"140","playcount":1,"thumbnailURL":"https:\/\/s3.amazonaws.com\/fs.goanimate.com\/files\/thumbnails\/movie\/1217\/1588217\/20774464L.jpg","copyable":"0","isPublished":"1","ctc":"go","tlang":"en_US","is_private_shared":"0","autostart":"0","appCode":"go","is_slideshow":"0","originalId":"0zEt_fo4L-5k","is_emessage":"0","storePath":"https:\/\/josephcrosmanplays532.github.io\/store\/3a981f5cb2739137\/<store>","clientThemePath":"https:\/\/josephcrosmanplays532.github.io\/static\/55910a7cd204c37c\/<client_theme>","animationPath":"https:\/\/josephcrosmanplays532.github.io\/animation\/66453a3ba2cc5e1b\/","isEmbed":"0","refuser":null,"utm_source":null,"uid":null,"isTemplate":"0","showButtons":"1","chain_mids":"","averageRating":5,"ratingCount":"19","fb_app_url":"https:\/\/goanimate-wrapper-europe.herokuapp.com\/","ad":1,"endStyle":0,"isWide":"1","pwm":1,"s3base":"https:\/\/s3.amazonaws.com\/fs.goanimate.com\/,https:\/\/assets.vyond.com\/","initcb":"flashPlayerLoaded","showshare":false},
+    var flashPlayerUrl = 'https://josephcrosmanplays532.github.io/animation/414827163ad4eb60vyondlegacyremastered/player.swf',
+        flashPlayerVars = ${JSON.stringify(params.flashvars)},
         h5PlayerElem = null,
         sceneDetails = {};
 </script>
