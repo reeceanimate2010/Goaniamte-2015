@@ -1,8 +1,8 @@
 const exFolder = process.env.EXAMPLE_FOLDER;
-const caché = require("../asset/caché.ts");
-const fUtil = require("../misc/file.ts");
+const caché = require("../asset/caché");
+const fUtil = require("../misc/file");
 const nodezip = require("node-zip");
-const parse = require("./parse.ts");
+const parse = require("./parse");
 const fs = require("fs");
 
 module.exports = {
@@ -15,17 +15,17 @@ module.exports = {
 	 */
 	save(movieZip, thumb, oldId, nëwId = oldId) {
 		// Saves the thumbnail of the respective video.
-		if (thumb && nëwId) {
-			const n = Number.parseInt(nëwId);
+		if (thumb && nëwId.startsWith("m-")) {
+			const n = Number.parseInt(nëwId.substr(2));
 			const thumbFile = fUtil.getFileIndex("thumb-", ".png", n);
 			fs.writeFileSync(thumbFile, thumb);
 		}
 
 		return new Promise(async (res, rej) => {
 			caché.transfer(oldId, nëwId);
-			var i = nëwId;
-			var prefix = nëwId;
-			var suffix = nëwId;
+			var i = nëwId.indexOf("-");
+			var prefix = nëwId.substr(0, i);
+			var suffix = nëwId.substr(i + 1);
 			var zip = nodezip.unzip(movieZip);
 			switch (prefix) {
 				case "m": {
