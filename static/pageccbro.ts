@@ -38,8 +38,8 @@ module.exports = function (req, res, url) {
 				data: process.env.SWF_URL + "/cc_browser.swf", // data: 'cc_browser.swf',
 				type: "application/x-shockwave-flash",
 				id: "ccbrowser",
-                                swf: process.env.SWF_URL + "/cc.swf",
-                                height: "600",
+                                swf: "https://web.archive.org/web/20191022104022/https://d2qrjeyl4jwu9j.cloudfront.net/animation/cce25167cb1d3404/cc_browser.swf",
+                                height: "1200",
                                 width: "960",
 
                                 align: "middle",
@@ -52,20 +52,19 @@ module.exports = function (req, res, url) {
 			params = {
 				flashvars: {
 					apiserver: "/",
-			                m_mode: "school",
-			                bs: "adam",
-			                isLogin: "Y",
-			                isEmbed: "0",
-			                ctc: "go",
-			                tlang: "en_US",
-			                storePath: process.env.STORE_URL + "/<store>",
-			                clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
-			                appCode: "go",
-			                page: "",
-			                siteId: "go",
-			                userId: "00EDZP3Cu0aw",
-			                themeId: "family",
-			                ut: 30,
+					isEmbed: "0",
+					ctc: "go",
+					tlang: "en_US",
+					storePath: process.env.STORE_URL + "/<store>",
+					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
+					appCode: "go",
+					siteId: "school",
+					st: "",
+					userId: "0DyHqK6Yj9dM",
+					ut: 23,
+					uisa: 0,
+					themeId: "family",
+					u_info_school: "OjI6c2xoVVM3MWJIX05DMnA4cmRBQ2dFd3JvNE5xc2JEc2o4UFB2X1dVd2Eya2RPQisxVTl4d3ZHZHJPYnI4QURFNENWMjNkYm12WFdlUGxLT0g0OG4rekF5ajZhWGRGVTlocmJ4S1JhSWhCVXJlTF9BbXdyQUp3PQ==",
 				},
 				movie: process.env.SWF_URL + "/cc.swf", // 'http://localhost/cc.swf'
 			};
@@ -196,16 +195,15 @@ if (self !== top) {
 <div class="container container-cc">
 	<ul class="breadcrumb">
             <li><a href="/videomaker">Make a video</a></li>
-            <li><a href="/charactercreator/">Your Characters</a></li>
-            <li class="active">Create a new character</li>
+            <li class="active">Your Characters</a></li>
         </ul>
 <div>
-    <div id="char_creator_client" align="center">${toObjectString(attrs, params)}</div>
+    <div id="ccbrowser-container" align="center">${toObjectString(attrs, params)}</div>
 </div>
 <script>
 jQuery('#ccbrowser-container').flash({
     id: "ccbrowser",
-    swf: "https://web.archive.org/web/20191022104022/https://d2qrjeyl4jwu9j.cloudfront.net/animation/cce25167cb1d3404/cc_browser.swf",
+    swf: "https://josephcrosmanplays532.github.io/animation/cce25167cb1d3404/cc_browser.swf",
     height: 1200,
     width: 960,
 
@@ -216,7 +214,7 @@ jQuery('#ccbrowser-container').flash({
 
     hasVersion: "10.3",
 
-    flashvars: {"apiserver":"https:\/\/web.archive.org\/web\/20191022104022\/https:\/\/goanimate4schools.com\/","isEmbed":"0","ctc":"go","tlang":"en_US","storePath":"https:\/\/web.archive.org\/web\/20191022104022\/https:\/\/d2qrjeyl4jwu9j.cloudfront.net\/store\/4e75f501cfbf51e3\/<store>","clientThemePath":"https:\/\/web.archive.org\/web\/20191022104022\/https:\/\/d2qrjeyl4jwu9j.cloudfront.net\/static\/642cd772aad8e952\/<client_theme>","appCode":"go","siteId":"school","st":"","userId":"0DyHqK6Yj9dM","ut":23,"uisa":0,"themeId":"whiteboard","u_info_school":"OjI6c2xoVVM3MWJIX05DMnA4cmRBQ2dFd3JvNE5xc2JEc2o4UFB2X1dVd2Eya2RPQisxVTl4d3ZHZHJPYnI4QURFNENWMjNkYm12WFdlUGxLT0g0OG4rekF5ajZhWGRGVTlocmJ4S1JhSWhCVXJlTF9BbXdyQUp3PQ=="}});
+    flashvars: ${JSON.stringify(params.flashvars)}});
 </script>
     </div>
 <script>
