@@ -42,16 +42,8 @@ module.exports = function (req, res, url) {
 				data: process.env.SWF_URL + "/go_full.swf",
 				type: "application/x-shockwave-flash",
 				id: "Studio",
-                                swf: process.env.SWF_URL + "/go_full.swf",
                                 width: "100%",
-                                height: "100%",
-
-                                align: "middle",
-                                allowScriptAccess: "always",
-                                allowFullScreen: "true",
-                                wmode: "window",
-
-                                hasVersion: "10.3",
+                                height: "100%",  
 			};
 			params = {
 				flashvars: {
@@ -106,6 +98,7 @@ module.exports = function (req, res, url) {
 					newusr: 1,
 					goteam_draft_only: 0,
 				},
+				allowScriptAccess: "always",
 				movie: process.env.SWF_URL + "/go_full.swf",
 			};
 			break;
