@@ -1,4 +1,3 @@
-const cachéFolder = process.env.CACHÉ_FOLDER;
 const loadPost = require("../misc/post_body.ts");
 const movie = require("./main.ts");
 const http = require("http");
@@ -17,7 +16,7 @@ module.exports = function (req, res, url) {
 
 		var body = Buffer.from(data.body_zip, "base64");
 		var thumb = data.thumbnail_large && Buffer.from(data.thumbnail_large, "base64");
-		movie.save(body, thumb, mId).then((nId) => res.end("0" + nId));
+		movie.save(body, thumb, mId, data.presaveId).then((nId) => res.end("0" + nId));
 	});
 	return true;
 };
