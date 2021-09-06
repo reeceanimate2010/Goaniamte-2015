@@ -1021,77 +1021,11 @@ Copyright (C) Joseph Animate 2021, 2021.</p>
 
 <!-- FOOTER -->
 
-<div class="site-footer">
+<footer class="site-footer">
     <div class="container">
-        <div class="site-footer-nav row">
-            <div class="col-sm-3">
-                <div class="site-footer-nav-col">
-                    <h4><span>About GoAnimate</span></h4>
-                    <ul class="list-unstyled">
-                        <li><a href="https://josephcrosmanplays532.github.io/about">Who we are</a></li>
-                        <li><a href="http://careers.vyond.com/">Careers</a></li>
-                        <li><a href="https://josephcrosmanplays532.github.io/contactus">Contact Us</a></li>
-                        <li><a href="http://blog.vyond.com/">Blog</a></li>
-                        <li><a href="http://press.vyond.com/">Press</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="site-footer-nav-col">
-                    <h4><span>GoAnimate Solutions</span></h4>
-                    <ul class="list-unstyled">
-                        <li><a href="https://goanimate4schools.herokuapp.com">GoAnimate For Schools Remastered</a></li>
-                        <li><a href="https://vyondhosterremastered.000webhostapp.com">Vyond Hoster Remastered</a></li>
-                        <li><a href="https://goanimateforschools.github.io/" target="_blank">GoAnimate for Schools</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="site-footer-nav-col">
-                    <h4><span>Usage Guidelines</span></h4>
-                    <ul class="list-unstyled">
-                        <li><a href="https://josephcrosmanplays532.github.io/termsofuse">Terms of Service</a></li>
-                        <li><a href="https://josephcrosmanplays532.github.io/privacy">Privacy Policy</a></li>
-                        <li><a href="//support.vyond.com/hc/en-us/articles/202408574" target="_blank">Cancellation Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="site-footer-nav-col">
-                    <h4>Getting Help</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="http://resources.vyond.com/">Resources</a></li>
-                        <li><a href="http://support.vyond.com/">Help Center</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="site-footer-socials-container">
-                    Follow us on:
-                    <ul class="site-footer-socials">
-                        <li><a class="glyph-social glyph-facebook" href="http://www.facebook.com/GoAnimateInc"><span class="sr-only">Facebook</span></a></li>
-                        <li><a class="glyph-social glyph-twitter" href="http://twitter.com/GoAnimate"><span class="sr-only">Twitter</span></a></li>
-                        <li><a class="glyph-social glyph-linked-in" href="http://www.linkedin.com/company/goanimate"><span class="sr-only">LinkedIn</span></a></li>
-                        <li><a class="glyph-social glyph-youtube" href="http://www.youtube.com/user/GoAnimate"><span class="sr-only">YouTube</span></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="site-footer-copyright">
-                    <span class="site-footer-norton">
-                      <script type="text/javascript" src="https://josephcrosmanplays532.github.io/GoAnimate-2016-Video-Player-Files/norton.js"></script>
-                    </span>
-                    <img src="https://web.archive.org/web/20160412001103im_/http://lightspeed.goanimate.com/static/6a882951f9649a88/go/img/footer/logo_amazon.png" alt="AWS Partner Network"/>
-                    &nbsp;&nbsp;&nbsp;
-                    <div class="ga-copy">GoAnimate &copy; 2016</div>
-                </div>
-            </div>
-        </div>
+        Vyond™ is a trademark of GoAnimate, Inc. © 2019 GoAnimate, Inc. <a href="https://www.vyond.com/terms">Terms of Service</a> | <a href="https://www.vyond.com/privacy">Privacy Policy</a> | <a href="https://www.vyond.com/cookies">Cookies Policy</a>
     </div>
-</div>
+</footer>
 
 
 <div id="studio_container" style="display: none;">
