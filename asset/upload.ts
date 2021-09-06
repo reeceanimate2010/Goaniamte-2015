@@ -17,13 +17,13 @@ module.exports = function (req, res, url) {
 			formidable().parse(req, (_, fields, files) => {
 				var [mId, mode, ext] = fields.params.split(".");
 				switch (mode) {
-					case "vo":
+					case "voiceover":
 						mode = "voiceover";
 						break;
-					case "se":
+					case "soundeffect":
 						mode = "soundeffect";
 						break;
-					case "mu":
+					case "bgmusic":
 						mode = "bgmusic";
 						break;
 				}
