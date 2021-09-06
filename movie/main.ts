@@ -16,7 +16,7 @@ module.exports = {
 	save(movieZip, thumb, oldId, nëwId = oldId) {
 		// Saves the thumbnail of the respective video.
 		if (thumb && nëwId) {
-			const n = Number.parseInt(nëwId.substr(2));
+			const n = Number.parseInt(nëwId);
 			const thumbFile = fUtil.getFileIndex("thumb-", ".png", n);
 			fs.writeFileSync(thumbFile, thumb);
 		}
