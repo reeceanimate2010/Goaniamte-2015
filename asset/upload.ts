@@ -26,7 +26,6 @@ module.exports = function (req, res, url) {
 						break;
 				}
 		const path = files.import.path, buffer = fs.readFileSync(path);
-		const mId = loadPost.get(req).movieId;
 
 		const name = files.import.name;
 		const suffix = name.substr(name.lastIndexOf('.'));
