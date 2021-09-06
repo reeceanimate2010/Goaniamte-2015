@@ -12,7 +12,19 @@ const fs = require("fs");
  */
 module.exports = function (req, res, url) {
 	if (req.method != 'POST' || url.pathname != '/ajax/saveUserProp') return;
-	new formidable.IncomingForm().parse(req, (e, f, files) => {
+	formidable.IncomingForm().parse(req, (e, f, files) => {
+		var [mId, mode, ext] = fields.params.split(".");
+				switch (mode) {
+					case "voiceover":
+						mode = "voiceover";
+						break;
+					case "soundeffect":
+						mode = "soundeffect";
+						break;
+					case "bgmusic":
+						mode = "music";
+						break;
+				}
 		const path = files.import.path, buffer = fs.readFileSync(path);
 		const mId = loadPost.get(req).movieId;
 
@@ -23,4 +35,16 @@ module.exports = function (req, res, url) {
 		res.end();
 	});
 	return true;
+	case "/goapi/saveSound/":
+			loadPost(req, res).then(([data, mId]) => {
+				var bytes = Buffer.from(data.bytes, "base64");
+				asset.save(bytes, mId, "voiceover", "ogg");
+			});
+			return true;
+		case "/goapi/saveTemplate/":
+			loadPost(req, res).then(([data, mId]) => {
+				var body = Buffer.from(data.body_zip, "base64");
+				res.end("0" + asset.save(body, mId, "starter", "xml"));
+			});
+			return true;
 }
