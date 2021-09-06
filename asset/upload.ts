@@ -15,7 +15,7 @@ module.exports = function (req, res, url) {
 	switch (url.pathname) {
 		case "/ajax/saveUserProp":
 			formidable().parse(req, (_, fields, files) => {
-				var [mId, mode, ext] = fields.params.split(".");
+				var [mId, mode, ext] = fields.params;
 				switch (mode) {
 					case "voiceover":
 						mode = "voiceover";
