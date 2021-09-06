@@ -1,3 +1,4 @@
+const cachéFolder = process.env.CACHÉ_FOLDER;
 const loadPost = require("../misc/post_body.ts");
 const movie = require("./main.ts");
 const http = require("http");
