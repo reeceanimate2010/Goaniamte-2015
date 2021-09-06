@@ -106,7 +106,7 @@ module.exports = function (req, res, url) {
 					newusr: 1,
 					goteam_draft_only: 0,
 				},
-				movie: process.env.SWF_URL + "/go_full.swf"
+				movie: process.env.SWF_URL + "/go_full.swf",
 			};
 			break;
 		}
