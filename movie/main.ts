@@ -23,7 +23,7 @@ module.exports = {
 
 		return new Promise(async (res, rej) => {
 			caché.transfer(oldId, nëwId);
-			var i = nëwId.indexOf("-");
+			var i = nëwId;
 			var prefix = nëwId.substr(0, i);
 			var suffix = nëwId.substr(i + 1);
 			var zip = nodezip.unzip(movieZip);
