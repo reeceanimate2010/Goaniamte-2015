@@ -925,7 +925,7 @@ Copyright (C) Joseph Animate 2021, 2021.</p>
 <input id="embed_code_field" type="hidden" value="<iframe scrolling=&quot;no&quot; allowTransparency=&quot;true&quot; allowfullscreen frameborder=&quot;0&quot; width=&quot;620&quot; height=&quot;350&quot; src=&quot;https://goanimate.com/player/embed/0-13F9yscDHc&quot; ></iframe>
 "/>
 <script>
-    var flashPlayerUrl = 'https://josephcrosmanplays532.github.io/animation/414827163ad4eb60vyondlegacyremastered/player.swf',
+    var flashPlayerUrl = 'https://josephcrosmanplays532.github.io/animation/66453a3ba2cc5e1bvyond/player.swf',
         flashPlayerVars = ${JSON.stringify(params.flashvars)},
         h5PlayerElem = null,
         sceneDetails = {};
