@@ -38,7 +38,7 @@ module.exports = function (req, res, url) {
 				query.movieId && query.movieId.startsWith("m")
 					? query.movieId
 					: `m-${fUtil[query.Autosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
-			let startersave =
+			let startersaveId =
 				query.starterId && query.starterId.startsWith("s")
 					? query.starterId
 					: `s-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("starter-", ".xml")}`;
