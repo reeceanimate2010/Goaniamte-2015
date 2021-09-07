@@ -34,20 +34,33 @@ module.exports = function (req, res, url) {
 	var attrs, params, title;
 	switch (url.pathname) {
                 case "/studio": {
-			let presave =
+			let moviesave =
 				query.movieId && query.movieId.startsWith("m")
 					? query.movieId
-					: `m-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
-			title = "Video Editor";
+					: `m-${fUtil[query.Autosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
+			let startersave =
+				query.starterId && query.starterId.startsWith("s")
+					? query.starterId
+					: `s-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("starter-", ".xml")}`;
+			title = "The Video Maker From GoAnimate - Make a Video For YouTube!";
 			attrs = {
 				data: process.env.OLDSWF_URL + "/go_full.swf",
 				type: "application/x-shockwave-flash",
-				width: "100%",
-				height: "100%",
+				id: "Studio",
+                                swf: process.env.OLDSWF_URL + "/go_full.swf",
+                                width: "100%",
+                                height: "100%",
+
+                                align: "middle",
+                                allowScriptAccess: "always",
+                                allowFullScreen: "true",
+                                wmode: "window",
+
+                                hasVersion: "10.3",
 			};
 			params = {
 				flashvars: {
-					presaveId: presave,
+					presaveId: moviesave, startersave,
 					movieId: "",
 					loadas: 0,
 					asId: "",
