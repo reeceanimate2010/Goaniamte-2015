@@ -57,7 +57,7 @@ module.exports = function (req, res, url) {
 			params = {
 				flashvars: {
 					apiserver: "/",
-					storePath: "https://josephcrosmanplays532.github.io/animation/857/<store>",
+					storePath: "https://josephcrosmanplays532.github.io/store/50/<store>",
 					isEmbed: 1,
 					ctc: "go",
 					ut: 50,
