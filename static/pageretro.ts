@@ -374,7 +374,7 @@ function voiceBanner(bannerId) {
         var enable_full_screen = true;
         var studio_data = {
             id: "Studio",
-            swf: "https://josephcrosmanplays532.github.io/animation/857/go_full.swf",
+            swf: "https://josephcrosmanplays532.github.io/animation/18/go_full.swf",
             width: "100%",
             height: "100%",
             align: "middle",
@@ -625,7 +625,7 @@ function loadLegacyPreview() {
     createPreviewPlayer("playerdiv", {
         height: 360,
         width: 640,
-        player_url: "https://josephcrosmanplays532.github.io/animation/877/player.swf",
+        player_url: "https://josephcrosmanplays532.github.io/animation/18/player.swf",
         quality: "medium"
     }, {
         movieOwner: "", movieOwnerId: "", movieId: "", ut: "-1",
@@ -633,9 +633,9 @@ function loadLegacyPreview() {
         apiserver: "/", thumbnailURL: "", copyable: "0", isPublished: "0", ctc: "go", tlang: "en_US", is_private_shared: "0",
         autostart: "1", appCode: "go", is_slideshow: "0", originalId: "0", is_emessage: "0", isEmbed: "0", refuser: "",
         utm_source: "", uid: "", isTemplate: "1", showButtons: "0", chain_mids: "", showshare: "0", averageRating: "",
-                    s3base: "https://s3.amazonaws.com/fs.goanimate.com/,https://assets.vyond.com/",
-                ratingCount: "", fb_app_url: "/", numContact: 0, isInitFromExternal: 1, storePath: "http://lightspeed.domo.goanimate.com/store/50/<store>", clientThemePath: "https://josephcrosmanplays532.github.io/static/477/<client_theme>", animationPath: "https://josephcrosmanplays532.github.io/animation/857/",
-        startFrame: previewStartFrame
+                    s3base: "https://s3.amazonaws.com/fs.goanimate.com/",
+                    ratingCount: "", fb_app_url: "/", numContact: 0, isInitFromExternal: 1, storePath: "http://lightspeed.domo.goanimate.com/store/50/<store>", clientThemePath: "https://josephcrosmanplays532.github.io/static/477/<client_theme>", animationPath: "https://josephcrosmanplays532.github.io/animation/18/",
+         startFrame: previewStartFrame
     });
     $('#previewPlayer').removeClass('using-h5');
 }
