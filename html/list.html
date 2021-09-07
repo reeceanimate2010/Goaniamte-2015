@@ -10,49 +10,40 @@
 				<div class="char_dropdown button_small">
 					<div>CREATE A CHARACTER</div>
 					<menu>
-						<a href="/cc?themeId=family&bs=adam">Adam</a>
-						<a href="/cc?themeId=family&bs=eve">Eve</a>
-						<a href="/cc?themeId=family&bs=bob">Bob</a>
-						<a href="/cc?themeId=family&bs=rocky">Rocky</a>
+						<a href="/charactercreator/new_char/?themeId=family&bs=adam">Adam</a>
+						<a href="/charactercreator/new_char/?themeId=family&bs=eve">Eve</a>
+						<a href="/charactercreator/new_char/?themeId=family&bs=bob">Bob</a>
+						<a href="/charactercreator/new_char/?themeId=family&bs=rocky">Rocky</a>
 						<div></div>
-						<!--
-						<a href="/cc?themeId=business&bs=default">Business</a>
-						<a href="/cc?themeId=business&bs=heavy">Heavy</a>
-						<a href="/cc?themeId=business&bs=kid">Kid</a>
+						<a href="/charactercreator/new_char/?themeId=anime&bs=guy">Guy (Anime)</a>
+						<a href="/charactercreator/new_char/?themeId=anime&bs=girl">Girl (Anime)</a>
 						<div></div>
-						<a href="/cc?themeId=whiteboard&bs=default">Whiteboard</a>
-						<a href="/cc?themeId=whiteboard&bs=kid">Whiteboard (Kid)</a>
+						<a href="/charactercreator/new_char/?themeId=ninjaanime&bs=guy">Guy (Ninja Anime)</a>
+						<a href="/charactercreator/new_char/?themeId=ninjaanime&bs=girl">Girl (Ninja Anime)</a>
 						<div></div>
-						-->
-						<a href="/cc?themeId=anime&bs=guy">Guy (Anime)</a>
-						<a href="/cc?themeId=anime&bs=girl">Girl (Anime)</a>
+						<a href="/charactercreator/new_char/?themeId=cc2&bs=default">Lil' Peepz</a>
 						<div></div>
-						<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja Anime)</a>
-						<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja Anime)</a>
+						<a href="/charactercreator/new_char/?themeId=chibi&bs=default">Chibi Peepz</a>
 						<div></div>
-						<a href="/cc?themeId=cc2&bs=default">Lil' Peepz</a>
-						<div></div>
-						<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
-						<div></div>
-						<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
+						<a href="/charactercreator/new_char/?themeId=ninja&bs=default">Chibi Ninjas</a>
 					</menu>
 				</div>
 				<div class="char_dropdown button_small">
 					<div>BROWSE CHARACTERS</div>
 					<menu>
-						<a href="/cc_browser?themeId=family">Comedy World</a>
-						<a href="/cc_browser?themeId=anime">Anime</a>
-						<a href="/cc_browser?themeId=ninjaanime">Ninja Anime</a>
-						<a href="/cc_browser?themeId=cc2">Lil' Peepz</a>
-						<a href="/cc_browser?themeId=chibi">Chibi Peepz</a>
-						<a href="/cc_browser?themeId=ninja">Chibi Ninjas</a>
+						<a href="/charactercreator/?themeId=family">Comedy World</a>
+						<a href="/charactercreator/?themeId=anime">Anime</a>
+						<a href="/charactercreator/?themeId=ninjaanime">Ninja Anime</a>
+						<a href="/charactercreator/?themeId=cc2">Lil' Peepz</a>
+						<a href="/charactercreator/?themeId=chibi">Chibi Peepz</a>
+						<a href="/charactercreator/?themeId=ninja">Chibi Ninjas</a>
 					</menu>
 				</div>
 				<a href="/go_full" class="button_big">MAKE A VIDEO</a>
 			</div>
 		</div>
 		<div class="warning">Vyond Rewrapped is going to be better than some lvm projects that are having troble trying to get them brought back. <strong>i really hope this works.<br><a href='https://github.com/josephcrosmanplays532/Vyond-Rewrapped'>Link
-				to the source code on GitHub (private)</a>
+				to the source code on GitHub</a>
 		</div>
 	</header>
 	<table>
@@ -71,7 +62,7 @@
 			</tr>
 		</tfoot>
 	</table>
-	<form enctype='multipart/form-data' action='/upload_movie' method='post'>
+	<form enctype='multipart/form-data' action='/ajax/uploadVideoXml' method='post'>
 		<input id='file' type="file" onchange="this.form.submit()" name='import' accept=".xml" />
 	</form>
 	<script>
@@ -106,7 +97,7 @@
 		}
 
 		function popup(id) {
-			window.open('/player?movieId=' + id, 'MsgWindow', 'width=1280,height=723,left=' + (screen.width / 2 - 640) + ',top=' + (screen.height / 2 - 360));
+			window.open('/videos/?movieId=' + id, 'MsgWindow', 'width=1280,height=723,left=' + (screen.width / 2 - 640) + ',top=' + (screen.height / 2 - 360));
 		}
 	</script>
 	<style>
