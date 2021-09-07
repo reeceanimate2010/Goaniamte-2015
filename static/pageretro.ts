@@ -33,7 +33,86 @@ module.exports = function (req, res, url) {
 
 	var attrs, params, title;
 	switch (url.pathname) {
-                case "/studio": {
+		case "/studio": {
+			let presave =
+				query.movieId && query.movieId.startsWith("m")
+					? query.movieId
+					: `m-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
+			title = "The Video Maker From Maker From Vyond - Make a Video For YouTube!"
+			attrs = {
+				data: process.env.OLDSWF_URL + "/go_full.swf",
+				type: "application/x-shockwave-flash",
+				id: "Studio",
+                                swf: process.env.OLDSWF_URL + "/go_full.swf",
+                                width: "100%",
+                                height: "100%",
+
+                                align: "middle",
+                                allowScriptAccess: "always",
+                                allowFullScreen: "true",
+                                wmode: "window",
+
+                                hasVersion: "10.3",
+			};
+			params = {
+				flashvars: {
+					presaveId: presave,
+					movieId: "",
+					loadas: 0,
+					asId: "",
+					originalId: "",
+					apiserver: "/",
+					storePath: process.env.OLDSTORE_URL + "/<store>",
+					clientThemePath: process.env.OLDCLIENT_URL + "/<client_theme>",
+					animationPath: process.env.OLDSWF_URL + "/",
+					userId: "0cf4CMw1ZNCk",
+					username: "bakeryb40488",
+					uemail: "bakeryb40488@gmail.com",
+					numContact: "0",
+					ut: 23,
+					ve: false,
+					isEmbed: 0,
+					nextUrl: "/videos/?movieId=<movieId>",
+					bgload: process.env.OLDSWF_URL + "/go_full.swf",
+					lid: "1",
+					ctc: "go",
+					themeColor: "silver",
+					tlang: "en_US",
+					siteId: "13",
+					templateshow: "false",
+					forceshow: "false",
+					appCode: "go",
+					lang: "en",
+					tmcc: 4048901,
+					fb_app_url: "/",
+					is_published: "0",
+					is_private_shared: "1",
+					is_password_protected: false,
+					upl: 1,
+					hb: "1",
+					pts: "1",
+					msg_index: "",
+					ad: 0,
+					has_asset_bg: 1,
+					has_asset_char: 0,
+					initcb: "studioLoaded",
+					retut: 0,
+					featured_categories: null,
+					s3base: "https://josephcrosmanplays532.github.io/s3base/,https://josephcrosmanplays532.github.io/assets/",
+					st: "",
+					uisa: 0,
+					u_info: "OjI6elg5SnZCOUEyTHZiY2lhZGRXTm9Nd0ljVWhNbEpGaXJFdkpEdkltdEp6RWhrQ0VIbXZIVTBjRTlhUGZKMjJoVHVTUE5vZk1XYnFtSE1vZG5TeldyQVJNcDFmUFB2NDVtR0FTSlZZ",
+					tm: "FIN",
+					tray: "retro",
+					isWide: 1,
+					newusr: 1,
+					goteam_draft_only: 0,
+				},
+				movie: process.env.OLDSWF_URL + "/go_full.swf"
+			};
+			break;
+		}
+                case "/go_full": {
 			let presave =
 				query.movieId && query.movieId.startsWith("m")
 					? query.movieId
@@ -61,7 +140,6 @@ module.exports = function (req, res, url) {
 					retut: 1,
 					clientThemePath: process.env.OLDCLIENT_URL + "/<client_theme>",
 					themeId: "business",
-					tray: "retro",
 					tlang: "en_US",
 					presaveId: presave,
 					goteam_draft_only: 1,
