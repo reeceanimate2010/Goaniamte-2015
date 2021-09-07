@@ -94,7 +94,7 @@ module.exports = function (req, res, url) {
 					uisa: 0,
 					u_info: "OjI6elg5SnZCOUEyTHZiY2lhZGRXTm9Nd0ljVWhNbEpGaXJFdkpEdkltdEp6RWhrQ0VIbXZIVTBjRTlhUGZKMjJoVHVTUE5vZk1XYnFtSE1vZG5TeldyQVJNcDFmUFB2NDVtR0FTSlZZ",
 					tm: "FIN",
-					tray: "custom",
+					tray: "retro",
 					isWide: 1,
 					newusr: 1,
 					goteam_draft_only: 0,
