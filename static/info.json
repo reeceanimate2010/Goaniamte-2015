@@ -7,6 +7,13 @@
 			"statusCode": 302,
 			"content": ""
 		},
+		"/static/animation/importer.swf": {
+			"headers": {
+				"Location": "https://josephcrosmanplays532.github.io/animation/857/importer.swf"
+			},
+			"statusCode": 302,
+			"content": ""
+		},
 		"/$": {
 			"headers": {
 				"Location": "/yourvideos"
