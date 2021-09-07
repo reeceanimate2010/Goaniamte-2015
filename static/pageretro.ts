@@ -48,7 +48,7 @@ module.exports = function (req, res, url) {
 			params = {
 				flashvars: {
 					apiserver: "/",
-					storePath: process.env.OLDSTORE_URL + "/<store>",
+					storePath: process.env.STORE_URL + "/<store>",
 					isEmbed: 1,
 					ctc: "go",
 					ut: 50,
