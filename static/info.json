@@ -40,19 +40,6 @@
 				"Content-Type": "text/html; charset=UTF-8"
 			}
 		},
-		"/static/animation/([^?]+x-shockware-flash).*": {
-			"contentReplace": true,
-			"regexLink": "/static/animation/$1",
-			"headers": {
-				"Content-Type": "application/x-shockware-flash; charset=UTF-8"
-			}
-		},
-		"/static/animation/([^?]+).*": {
-			"regexLink": "/static/animation/$1",
-			"headers": {
-				"Content-Type": "application/x-shockware-flash; charset=UTF-8"
-			}
-		},
 		"videomaker(.*)": {
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
