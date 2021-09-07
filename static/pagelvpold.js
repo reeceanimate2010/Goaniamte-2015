@@ -201,26 +201,26 @@ module.exports = function (req, res, url) {
 
 	<div>	  
 		<script type="text/javascript">
-var playerApiReady = false;
-function playerLoaded() {
-    playerApiReady = true;
-    jQuery(document).trigger('playerApiReady');
-};
-jQuery('#playerdiv').flash({
-    id: "Player",
-    swf: "https://josephcrosmanplays532.github.io/animation/66453a3ba2cc5e1bvyond/player.swf",
-    height: 349,
-    width: 620,
-    bgcolor: "#000000",
-    scale: "exactfit",
-    allowScriptAccess: "always",
-    allowFullScreen: "true",
-    wmode: "opaque",
-    hasVersion: "10.3",
-    flashvars: ${JSON.stringify(params.flashvars)}});
-jQuery('#player-overlay-dismiss').click(function() {
-    jQuery('#player-overlay').hide();
-});
+                var playerApiReady = false;
+                function playerLoaded() {
+                    playerApiReady = true;
+                    jQuery(document).trigger('playerApiReady');
+                };
+                jQuery('#playerdiv').flash({
+                id: "Player",
+                swf: "https://josephcrosmanplays532.github.io/animation/18/player.swf",
+                height: 349,
+                width: 620,
+                bgcolor: "#464646",
+                scale: "exactfit",
+                allowScriptAccess: "always",
+                allowFullScreen: "true",
+                wmode: "opaque",
+                hasVersion: "10.3",
+                flashvars: ${JSON.stringify(params.flashvars)}});
+            jQuery('#player-overlay-dismiss').click(function() {
+                jQuery('#player-overlay').hide();
+          });
 </script>
 	</div>
 </div>
