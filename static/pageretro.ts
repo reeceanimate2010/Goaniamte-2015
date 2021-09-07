@@ -38,26 +38,17 @@ module.exports = function (req, res, url) {
 				query.movieId && query.movieId.startsWith("m")
 					? query.movieId
 					: `m-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
-			title = "The Video Maker from Vyond - Make a Video for YouTube!";
+			title = "Video Editor";
 			attrs = {
-				data: "https://josephcrosmanplays532.github.io/animation/857/go_full.swf",
+				data: process.env.OLDSWF_URL + "/go_full.swf",
 				type: "application/x-shockwave-flash",
-				id: "Studio",
-                                swf: "https://josephcrosmanplays532.github.io/animation/857/go_full.swf",
-                                width: "100%",
-                                height: "100%",
-
-                                align: "middle",
-                                allowScriptAccess: "always",
-                                allowFullScreen: "true",
-                                wmode: "window",
-
-                                hasVersion: "10.3",
+				width: "100%",
+				height: "100%",
 			};
 			params = {
 				flashvars: {
 					apiserver: "/",
-					storePath: "https://josephcrosmanplays532.github.io/store/50/<store>",
+					storePath: process.env.OLDSTORE_URL + "/<store>",
 					isEmbed: 1,
 					ctc: "go",
 					ut: 50,
@@ -68,8 +59,9 @@ module.exports = function (req, res, url) {
 					lid: 13,
 					isLogin: "Y",
 					retut: 1,
-					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
+					clientThemePath: process.env.OLDCLIENT_URL + "/<client_theme>",
 					themeId: "business",
+					tray: "retro",
 					tlang: "en_US",
 					presaveId: presave,
 					goteam_draft_only: 1,
@@ -77,7 +69,7 @@ module.exports = function (req, res, url) {
 					collab: 0,
 					nextUrl: "/html/list.html",
 				},
-				movie: "https://josephcrosmanplays532.github.io/animation/857/go_full.swf"
+				allowScriptAccess: "always",
 			};
 			break;
 		}  
