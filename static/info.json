@@ -52,6 +52,19 @@
 				"Content-Type": "text/html; charset=UTF-8"
 			}
 		},
+		"/ajax/([^?]+html).*": {
+			"contentReplace": true,
+			"regexLink": "/ajax/$1",
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
+		"/ajax([^?]+).*": {
+			"regexLink": "/ajax/$1",
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
 		"/html/([^?]+).*": {
 			"regexLink": "/html/$1",
 			"headers": {
