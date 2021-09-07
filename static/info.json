@@ -7,6 +7,13 @@
 			"statusCode": 302,
 			"content": ""
 		},
+		"?v=null": {
+			"headers": {
+				"Location": "/static/animation/importer.swf"
+			},
+			"statusCode": 302,
+			"content": ""
+		},
 		"/$": {
 			"headers": {
 				"Location": "/yourvideos"
