@@ -11,7 +11,7 @@ const fs = require("fs");
  * @returns {boolean}
  */
 module.exports = function (req, res, url) {
-	if (req.method != "POST" || url.path != "/upload_movie") return;
+	if (req.method != "POST" || url.path != "/ajax/videoUploadXml") return;
 	new formidable.IncomingForm().parse(req, (e, f, files) => {
 		if (!files.import) return;
 		var path = files.import.path;
