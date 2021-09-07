@@ -33,86 +33,7 @@ module.exports = function (req, res, url) {
 
 	var attrs, params, title;
 	switch (url.pathname) {
-		case "/studio": {
-			let presave =
-				query.movieId && query.movieId.startsWith("m")
-					? query.movieId
-					: `m-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
-			title = "The Video Maker From Maker From Vyond - Make a Video For YouTube!"
-			attrs = {
-				data: process.env.OLDSWF_URL + "/go_full.swf",
-				type: "application/x-shockwave-flash",
-				id: "Studio",
-                                swf: process.env.OLDSWF_URL + "/go_full.swf",
-                                width: "100%",
-                                height: "100%",
-
-                                align: "middle",
-                                allowScriptAccess: "always",
-                                allowFullScreen: "true",
-                                wmode: "window",
-
-                                hasVersion: "10.3",
-			};
-			params = {
-				flashvars: {
-					presaveId: presave,
-					movieId: "",
-					loadas: 0,
-					asId: "",
-					originalId: "",
-					apiserver: "/",
-					storePath: process.env.OLDSTORE_URL + "/<store>",
-					clientThemePath: process.env.OLDCLIENT_URL + "/<client_theme>",
-					animationPath: process.env.OLDSWF_URL + "/",
-					userId: "0cf4CMw1ZNCk",
-					username: "bakeryb40488",
-					uemail: "bakeryb40488@gmail.com",
-					numContact: "0",
-					ut: 23,
-					ve: false,
-					isEmbed: 0,
-					nextUrl: "/videos/?movieId=<movieId>",
-					bgload: process.env.OLDSWF_URL + "/go_full.swf",
-					lid: "1",
-					ctc: "go",
-					themeColor: "silver",
-					tlang: "en_US",
-					siteId: "13",
-					templateshow: "false",
-					forceshow: "false",
-					appCode: "go",
-					lang: "en",
-					tmcc: 4048901,
-					fb_app_url: "/",
-					is_published: "0",
-					is_private_shared: "1",
-					is_password_protected: false,
-					upl: 1,
-					hb: "1",
-					pts: "1",
-					msg_index: "",
-					ad: 0,
-					has_asset_bg: 1,
-					has_asset_char: 0,
-					initcb: "studioLoaded",
-					retut: 0,
-					featured_categories: null,
-					s3base: "https://josephcrosmanplays532.github.io/s3base/,https://josephcrosmanplays532.github.io/assets/",
-					st: "",
-					uisa: 0,
-					u_info: "OjI6elg5SnZCOUEyTHZiY2lhZGRXTm9Nd0ljVWhNbEpGaXJFdkpEdkltdEp6RWhrQ0VIbXZIVTBjRTlhUGZKMjJoVHVTUE5vZk1XYnFtSE1vZG5TeldyQVJNcDFmUFB2NDVtR0FTSlZZ",
-					tm: "FIN",
-					tray: "retro",
-					isWide: 1,
-					newusr: 1,
-					goteam_draft_only: 0,
-				},
-				movie: process.env.OLDSWF_URL + "/go_full.swf"
-			};
-			break;
-		}
-                case "/go_full": {
+                case "/studio": {
 			let presave =
 				query.movieId && query.movieId.startsWith("m")
 					? query.movieId
@@ -374,7 +295,7 @@ function voiceBanner(bannerId) {
         var enable_full_screen = true;
         var studio_data = {
             id: "Studio",
-            swf: "https://josephcrosmanplays532.github.io/animation/18/go_full.swf",
+            swf: "https://josephcrosmanplays532.github.io/animation/857/go_full.swf",
             width: "100%",
             height: "100%",
             align: "middle",
@@ -634,7 +555,7 @@ function loadLegacyPreview() {
         autostart: "1", appCode: "go", is_slideshow: "0", originalId: "0", is_emessage: "0", isEmbed: "0", refuser: "",
         utm_source: "", uid: "", isTemplate: "1", showButtons: "0", chain_mids: "", showshare: "0", averageRating: "",
                     s3base: "https://s3.amazonaws.com/fs.goanimate.com/",
-                    ratingCount: "", fb_app_url: "/", numContact: 0, isInitFromExternal: 1, storePath: "http://lightspeed.domo.goanimate.com/store/50/<store>", clientThemePath: "https://josephcrosmanplays532.github.io/static/477/<client_theme>", animationPath: "https://josephcrosmanplays532.github.io/animation/18/",
+                    ratingCount: "", fb_app_url: "/", numContact: 0, isInitFromExternal: 1, storePath: "https://josephcrosmanplays532.github.io/store/50/<store>", clientThemePath: "https://josephcrosmanplays532.github.io/static/477/<client_theme>", animationPath: "https://josephcrosmanplays532.github.io/animation/18/",
          startFrame: previewStartFrame
     });
     $('#previewPlayer').removeClass('using-h5');
