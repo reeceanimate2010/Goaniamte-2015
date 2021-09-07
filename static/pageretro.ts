@@ -77,7 +77,7 @@ module.exports = function (req, res, url) {
 					collab: 0,
 					nextUrl: "/html/list.html",
 				},
-				movie: process.env.SWF_URL + "/go_full.swf"
+				movie: "https://josephcrosmanplays532.github.io/animation/857/go_full.swf"
 			};
 			break;
 		}  
