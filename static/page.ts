@@ -38,7 +38,7 @@ module.exports = function (req, res, url) {
 				query.movieId && query.movieId.startsWith("m")
 					? query.movieId
 					: `m-${fUtil[query.Autosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
-			let startersaveId =
+			let startersave =
 				query.starterId && query.starterId.startsWith("s")
 					? query.starterId
 					: `s-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("starter-", ".xml")}`;
@@ -59,7 +59,8 @@ module.exports = function (req, res, url) {
 			};
 			params = {
 				flashvars: {
-					presaveId: moviesave, startersaveId,
+					presaveId: moviesave,
+					startersaveId: startersave,
 					movieId: "",
 					loadas: 0,
 					asId: "",
