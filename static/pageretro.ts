@@ -40,10 +40,10 @@ module.exports = function (req, res, url) {
 					: `m-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
 			title = "The Video Maker from Vyond - Make a Video for YouTube!";
 			attrs = {
-				data: "https://josephcrosmanplays532.github.io/animation/857/",
+				data: "https://josephcrosmanplays532.github.io/animation/18/go_full.swf",
 				type: "application/x-shockwave-flash",
 				id: "Studio",
-                                swf: "https://josephcrosmanplays532.github.io/animation/857/",
+                                swf: "https://josephcrosmanplays532.github.io/animation/18/go_full.swf",
                                 width: "100%",
                                 height: "100%",
 
@@ -64,7 +64,7 @@ module.exports = function (req, res, url) {
 					apiserver: "/",
 					storePath: "https:\/\/josephcrosmanplays532.github.io\/store\/50\/<store>",
 					clientThemePath: "https:\/\/josephcrosmanplays532.github.io\/static\/477\/<client_theme>",
-					animationPath: "https://josephcrosmanplays532.github.io/animation/857/",
+					animationPath: "https://josephcrosmanplays532.github.io/animation/18/",
 					userId: "0DyHqK6Yj9dM",
 					username: "good bois",
 					uemail: "crazy suitcase",
@@ -73,7 +73,7 @@ module.exports = function (req, res, url) {
 					ve: false,
 					isEmbed: 0,
 					nextUrl: "/videos/?movieId=<movieId>",
-					bgload: "https:\/\/josephcrosmanplays532.github.io\/animation\/857\/go_full.swf",
+					bgload: "https:\/\/josephcrosmanplays532.github.io\/animation\/18\/go_full.swf",
 					lid: "13",
 					ctc: "go",
 					themeColor: "silver",
@@ -118,7 +118,7 @@ module.exports = function (req, res, url) {
 					: `m-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
 			title = "Video Editor";
 			attrs = {
-				data: process.env.SWF_URL + "/go_full.swf",
+				data: "https://josephcrosmanplays532.github.io/animation/18/go_full.swf",
 				type: "application/x-shockwave-flash",
 				width: "100%",
 				height: "100%",
@@ -126,7 +126,7 @@ module.exports = function (req, res, url) {
 			params = {
 				flashvars: {
 					apiserver: "/",
-					storePath: process.env.STORE_URL + "/<store>",
+					storePath: "https://josephcrosmanplays532.github.io/store/50/<store>",
 					isEmbed: 1,
 					ctc: "go",
 					ut: 50,
@@ -137,7 +137,7 @@ module.exports = function (req, res, url) {
 					lid: 13,
 					isLogin: "Y",
 					retut: 1,
-					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
+					clientThemePath: "https://josephcrosmanplays532.github.io/static/477/<client_theme>",
 					themeId: "business",
 					tlang: "en_US",
 					presaveId: presave,
