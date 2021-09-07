@@ -547,7 +547,7 @@ function loadLegacyPreview() {
     createPreviewPlayer("playerdiv", {
         height: 360,
         width: 640,
-        player_url: "https://josephcrosmanplays532.github.io/animation/857/player.swf",
+        player_url: "https://josephcrosmanplays532.github.io/animation/877/player.swf",
         quality: "medium"
     }, {
         movieOwner: "", movieOwnerId: "", movieId: "", ut: "-1",
