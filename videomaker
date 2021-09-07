@@ -307,11 +307,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     The Originals!                </div>
 
                 <div class="theme__content__cta hidden-mobile">
-                                <a class="btn btn-orange" href="/studio">Select</a>
-                                
-                                <br>
-                        <a class="text-uppercase" href="/go_full">
-                        Dark Mode                   </a>
+                                <a class="btn btn-orange" href="/studio">Select</a>       
             
                 </div>
             </div>
