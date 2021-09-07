@@ -107,7 +107,7 @@
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
 			},
-			"content": "1"
+			"content": "ERROR: cannot process the store & static urls. did you put them in the right order nor do they work correctly?"
 		},
 		"/goapi/getWaveform/": {
 			"headers": {
