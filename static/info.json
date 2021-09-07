@@ -35,6 +35,21 @@
 			},
 			"content": ""
 		},
+		"static/go/js/(.*)": {
+			"headers": {
+				"Content-Type": "text/js; charset=UTF-8"
+			}
+		},
+		"static/go/css/(.*)": {
+			"headers": {
+				"Content-Type": "text/css; charset=UTF-8"
+			}
+		},
+		"static/go/img/(.*)": {
+			"headers": {
+				"Content-Type": "image/gif; charset=UTF-8"
+			}
+		},
 		"yourvideos(.*)": {
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
